@@ -39,12 +39,12 @@
     <body>
         <section class="section">
 			
-    	    <h1 class="title">나만의 동물상 테스트</h1>     <!-- #############  수정  ############## -->
+    	    <h1 class="title">나만의 유쌍 무쌍 테스트</h1>     <!-- #############  수정  ############## -->
         	<div class="image-container">
 				<img src="img/mainimage.jpg" alt="Main Image" class="image" />     <!-- #############  메인 이미지 경로는 img/mainimage.jpg  ############## -->
 			</div>
 		</section>
-		<h2 class="subtitle">얼굴로 보는 인공지능 동물상 테스트</h2>     <!-- ###############  수정  ############## -->
+		<h2 class="subtitle">얼굴로 보는 인공지능 유쌍 무쌍 테스트</h2>     <!-- ###############  수정  ############## -->
 
         <script
             class="jsbin"
@@ -165,7 +165,7 @@
         <script type="text/javascript">
 			
 			<!-- ################ 티쳐블머신 모델 주소 입력 ################ -->
-            let URL = 'https://teachablemachine.withgoogle.com/models/APW2JsR7f/';
+            let URL = 'https://teachablemachine.withgoogle.com/models/M-rgsy9sl/';
 			
 			
             let model, webcam, labelContainer, maxPredictions;
@@ -188,27 +188,27 @@
                 console.log(prediction[0].className);
                 var resultTitle, resultExplain, resultCeleb;
             
-				gtag('event', '동물상 테스트 수행', {
-					event_category: '동물상 테스트 수행'
+				gtag('event', '무쌍 유쌍 테스트 수행', {
+					event_category: '무쌍 유쌍 테스트 수행'
 				});
 				
 				switch (prediction[0].className) {
 				<!-- ################ 여기서부터 수정(case에 내 AI모델의 클래스 이름을 넣어주세요. ################ -->
 					case '유재석':
-						resultTitle = '입툭튀 유재석상';
+						resultTitle = '무쌍';
 						resultExplain =
 							'다정다감하고 귀여운 당신은 모든 사람들에게 즐거움을 주는 호감형이다! 상냥하고 활발한 성격으로 어디에서도 인기폭발이지만, 애교와 웃음이 많아 연인에게 특히나 사랑스럽다. 당신은 애인바라기로 애인의 관심이 부족하면 시무룩해지고 외로움을 타는 모습이 마치 강아지와 똑 닮았다!';
 						resultCeleb =
-							'유재석상 연예인: 박보영, 아이유, 윤승아, 민아(걸스데이), 한지민';
+							'무쌍 연예인: 박보영, 다현, 소희, 김다미, 이솜';
 						gtag('event', '결과', { event_category: '결과' });
 						break;
 						
-					case '강호동':
-						resultTitle = '집돼지 강호동상';
+					case '유쌍':
+						resultTitle = '유쌍';
 						resultExplain =
 							'도도하고 섹시한 당신은 첫인상은 차가워 보이지만 묘한 매력을 풍겨 언제나 인기가 넘친다. 자존심이 세계 1등과 맞먹지만 관심 받는 것을 좋아하고 애인에게 관심이 받고 싶을 때는 애교도 부릴 줄 아는 귀여운 매력을 가졌다. 시크한 츤데레로 연인에게 끊임없이 설렘을 안겨주는 당신은 고양이와 닮았다!';
 						resultCeleb =
-							'강호동상 연예인: 안소희(원더걸스), 오연서, 한예슬, 이성경, 이효리';
+							'유쌍 연예인: 정국, 한가인, 김태희, 이성경, 구하라';
 						gtag('event', '결과', { event_category: '결과' });
 						break;
 				<!-- ##################################  여기까지  ##################################### -->
@@ -248,12 +248,12 @@
 				
                     switch (prediction[i].className) {
 				<!-- ################ 여기서부터(case에 내 AI모델의 클래스 이름을 넣어주세요. ################ -->                    
-						case '유재석':
-                            labelTitle = '유재석';
+						case '무쌍':
+                            labelTitle = '무쌍';
                             break;
 							
-                        case '강호동':
-                            labelTitle = '강호동';
+                        case '유쌍':
+                            labelTitle = '유쌍';
 							break;
 				<!-- ##################################  여기까지  ##################################### -->
 							
